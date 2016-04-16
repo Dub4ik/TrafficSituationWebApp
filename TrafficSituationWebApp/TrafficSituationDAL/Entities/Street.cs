@@ -11,6 +11,7 @@ namespace TrafficSituationDAL.Entities
         public string Name { get; set; }
         public string Geolocation { get; set; }
         public int CityId { get; set; }
+        public City City { get; set; }
         public List<Accident> Accidents { get; set; }
         public List<ManuallyGeneratedData> ManuallyGeneratedDataList { get; set; }
         public List<AutomaticallyGeneratedData> AutomaticallyGeneratedDataList { get; set; }

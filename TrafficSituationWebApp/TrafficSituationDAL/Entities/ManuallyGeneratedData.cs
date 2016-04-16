@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace TrafficSituationDAL.Entities
 {
-    public class ManuallyGeneratedData
+    public class ManuallyGeneratedData:Entity
     {
+        public byte TrafficLevel { get; set; }
+        public DateTime DateOfCreation { get; set; }
+        public int StreetId { get; set; }
+        public Street Street { get; set; }
     }
 }
