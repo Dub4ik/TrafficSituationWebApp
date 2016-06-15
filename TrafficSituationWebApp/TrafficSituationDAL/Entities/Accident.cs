@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrafficSituationDAL.Entities
 {
-    public class Accident
+    public class Accident:Entity
     {
         public string Description { get; set; }
         public DateTime DateOfCreation { get; set; }

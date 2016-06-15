@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace TrafficSituationBLL
 {
-    public class Class1
+    public class RoadInformation
     {
+        public int TrafficLevel { get; set; }
+        public string Geoposition { get; set; }
     }
 }

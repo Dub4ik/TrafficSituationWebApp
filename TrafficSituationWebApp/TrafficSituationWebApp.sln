@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficSituationWebApp", "TrafficSituationWebApp\TrafficSituationWebApp.csproj", "{471E453F-1C47-4F01-970C-4332DE0974F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficSituationBLL", "TrafficSituationBLL\TrafficSituationBLL.csproj", "{03A073E5-015B-41DF-886A-85C88BE60DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficSituationDAL", "TrafficSituationDAL\TrafficSituationDAL.csproj", "{11351845-DD7A-4916-AF34-7CD5E62D2BDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{471E453F-1C47-4F01-970C-4332DE0974F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{471E453F-1C47-4F01-970C-4332DE0974F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{471E453F-1C47-4F01-970C-4332DE0974F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03A073E5-015B-41DF-886A-85C88BE60DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03A073E5-015B-41DF-886A-85C88BE60DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03A073E5-015B-41DF-886A-85C88BE60DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03A073E5-015B-41DF-886A-85C88BE60DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11351845-DD7A-4916-AF34-7CD5E62D2BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11351845-DD7A-4916-AF34-7CD5E62D2BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11351845-DD7A-4916-AF34-7CD5E62D2BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11351845-DD7A-4916-AF34-7CD5E62D2BDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

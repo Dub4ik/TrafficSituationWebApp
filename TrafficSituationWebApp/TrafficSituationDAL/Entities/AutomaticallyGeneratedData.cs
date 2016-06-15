@@ -8,7 +8,7 @@ namespace TrafficSituationDAL.Entities
 {
     public class AutomaticallyGeneratedData:Entity
     {
-        public float Speed { get; set; }
+        public double Speed { get; set; }
         public double Acceleration { get; set; }
         public DateTime DateOfCreation { get; set; }
         public int StreetId { get; set; }

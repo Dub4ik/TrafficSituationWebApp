@@ -1,18 +1,20 @@
 ﻿using System;
-using System.Collections.Generic
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TrafficSituationDAL.Entities;
+using TrafficSituationDAL.EntityConfigurations;
 
 namespace TrafficSituationDAL.Context
 {
-    class TrafficSituationContext:DbContext
+    public class TrafficSituationContext:DbContext
     {
-        public TrafficSituationContext()
+        public TrafficSituationContext():base("TrafficSituation")
         {
             //TODO: решить траблы с инициализатором
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<TrafficSituationContext>());
         }
 
         public DbSet<Country> Countries{ get; set; }
@@ -25,7 +27,12 @@ namespace TrafficSituationDAL.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Configurations.Add(new AccidentConfiguration());
+            modelBuilder.Configurations.Add(new AutomaticallyGeneratedDataConfiguration());
+            modelBuilder.Configurations.Add(new CityConfiguration());
+            modelBuilder.Configurations.Add(new CountryConfiguration());
+            modelBuilder.Configurations.Add(new ManuallyGeneratedDataConfiguration());
+            modelBuilder.Configurations.Add(new TrafficSituationReportConfiguration());
         }
 
     }

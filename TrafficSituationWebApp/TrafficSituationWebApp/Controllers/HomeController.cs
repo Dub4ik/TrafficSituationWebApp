@@ -6,12 +6,17 @@ using System.Web.Mvc;
 
 namespace TrafficSituationWebApp.Controllers
 {
+
     public class HomeController : Controller
     {
+        TrafficSituationBLL.TrafficSituationDataManager dataManager;
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
 
+
+            //dataManager = new TrafficSituationBLL.TrafficSituationDataManager();
+            //dataManager.GenerateTestData();
+            ViewBag.Title = "Home Page ";
             return View();
         }
     }
